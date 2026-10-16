@@ -12,10 +12,8 @@ P-03 Decision Addendum rev19.0 item 19 (12 Oct 2026); geometry from STEP MMP.00.
 | Bus | **dedicated SPI**, **Mode 0**, clock **at most 8 MHz** |
 | Data path | **data-ready interrupt with DMA** |
 | `WHO_AM_I` | **0x47** (checked at boot) |
-| Frame | `imu_link` on the centreline at **x 0.195 m** from `base_link`, on the base plate (top z -0.044) plus the board stack; axes aligned with `base_link` |
-
-Not verified: the board-stack height above the base plate is not set here, so the `imu_link` z is the
-base plate top (z -0.044) plus that stack height.
+| Frame | `imu_link` on the centreline at **x 0.0544 m**, **z 0.133 m** from `base_link` (54.4 mm in front of the drive axle, 177 mm above the base plate top, 231 mm above the floor); axes aligned with `base_link` |
+| Mount | on the electronics bracket MMP.04.00.00.002, CAD 2026-10-15. Was x 0.195 m on the base plate (Alex decision 2026-10-12) |
 
 The rest of this page documents the **Gate A unit** IMU (MPU6500).
 

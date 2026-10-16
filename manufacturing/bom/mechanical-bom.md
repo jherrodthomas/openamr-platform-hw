@@ -52,11 +52,31 @@ The following components are used in the assemblies:
 - **Screwed spacer sleeve:** TFF-M3/25 FIX&FASTEN
 - **BLDC Motor:** Z4BLD60-24GN-30S/4GN 25K 
 - **Laser range scanner:** RPLIDAR S3 (S3M1-R2), 2.0 navigation LiDAR, 4 × M2.5 (screw engagement ≤ 4 mm). Legacy (existing robot): RPLIDAR A1-A1M8
-- **LiDAR spacer plate:** 7.1 mm, on the existing 10 mm standoffs of the A1 bracket, under the S3, so the S3 scan plane sits at the A1 scan-plane height, 222.0 mm above the floor (BOM Issue 7.7 MEC-008)
+- **LiDAR mount spacer:** MMP.07.00.00.002, **17.5 mm** thick, 3D printed (see below), directly on the MMP.07 bracket without standoffs; S3 beam 174.0 + 17.5 + 30.55 = 222.05 mm above the floor. Was a 7.1 mm spacer plate on the 10 mm standoffs of the A1 bracket (BOM Issue 7.7 MEC-008)
 - **Camera module:** NVision Assem
 - **Proximity sensor:** E18-D80NK
 - **US sensor:** JSN-SR04T
 - **LED module:** 3 LED RGB Module 0.72W SWP
+
+## 3D-printed parts
+
+FDM print in PETG, at least 4 perimeters and 40 % infill. STEP and STL are in
+`mechanical/cad/production_files`.
+
+| Part number | Name | Qty | Size (mm) | Notes |
+|---|---|---|---|---|
+| MMP.01.00.00.003 | Camera mount | 1 | 144 x 42 x 32 | Orbbec Gemini 336L, 10° up face |
+| MMP.00.00.00.005 | TF-Luna mount | 2 | 52 x 9 x 23 | Front and back panel centre; 10° sensor face |
+| MMP.00.00.00.006 | Ultrasonic mount | 4 | 55 x 40 x 32 | MB7060, front and back panel edges, y ±130 mm |
+| MMP.07.00.00.002 | LiDAR mount spacer | 1 | 80 x 70 x **17.5** | Under the RPLIDAR S3, no standoffs |
+| MMP.02.00.00.002 | Motor driver mount | 1 | 170 x 30 x 28 | ZLAC8015D to the base plate |
+
+Sheet metal and plate parts for the electronics (STEP only, no DXF yet):
+
+| Part number | Name | Qty | Notes |
+|---|---|---|---|
+| MMP.04.00.00.002 | Electronics bracket | 1 | 2 mm sheet, under and in front of the center bracket; Jetson and IMU |
+| MMP.04.00.00.003 | STM32 Click mount plate | 1 | 6 mm plate, 100 x 90 mm; STM32 and Click boards, on anti-vibration standoffs |
 
 __________________________________________________________
 
