@@ -17,7 +17,7 @@ stop, the protective stop and the speed limit:
 
 Parts list, wiring, response-time budget, Teensy diagnostic I/O and the estimated Performance Level are in the
 assurance repository:
-`openamrobot-assurance/assurance/04-hardware/WP-H-02-safety-chain-design.md` (design),
+`openamrobot-assurance/assurance/04-hardware/WP-H-02-electrical-and-safety-chain-design.md` (design),
 `assurance/03-system/WP-S-03-technical-safety-concept.md` (architecture),
 `assurance/03-system/WP-S-02-safety-requirements.md` (requirements).
 
